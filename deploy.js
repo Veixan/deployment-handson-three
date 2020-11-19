@@ -22,7 +22,7 @@ function installPM2() {
 // transfers local project to the remote server
 function transferProjectToRemote(failed, successful) {
   return ssh.putDirectory(
-    '../riot-express-todo-list-two',
+    '../riot-express-todo-list',
     '/home/ubuntu/riot-express-todo-list-temp',
     {
       recursive: true,
@@ -95,7 +95,7 @@ function sshConnect() {
       return installPM2();
     })
     .then(function() {
-      console.log('Creating `deployment-handson-two-temp` folder.');
+      console.log('Creating `riot-express-todo-list-temp` folder.');
       return createRemoteTempFolder();
     })
     .then(function(result) {
