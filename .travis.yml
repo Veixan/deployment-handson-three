@@ -9,9 +9,7 @@ cache:
   - "node_modules"
 install:
   - npm install
-  - npm install eslint --save-dev
 script:
-  - npm run lint
   - npm test
 deploy:
   - provider: script
