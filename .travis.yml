@@ -6,6 +6,7 @@ cache:
   directories:
   - "node_modules"
 install:
+  - npm init
   - npm install
 script:
   - npm test
